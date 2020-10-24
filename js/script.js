@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
+
 	document.getElementById("nav-button").addEventListener("click", function() {
 	var element = document.getElementById("header-background");
 	var elementOther = document.getElementById("toggle-nav");
@@ -37,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		searchBarText.classList.remove("hidden");
 	}
 
-	var height = searchBarTextCol.clientHeight;
-	var class_height = "height: " + height + "px;";
-
+	
 	document.getElementById("search-bar-text-col").addEventListener("click", function() {
+		var height = searchBarTextCol.clientHeight;
+		var class_height = "height: " + height + "px;";
 		searchBarTextCol.classList.add("hidden");
 		fieldCol.classList.remove("hidden");
 		document.querySelector("#search-query-col").setAttribute("style", class_height);
@@ -110,6 +111,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			logo_side[i].innerHTML = '<img src="images/snap.png">';
 		}
 	});
+
+
 
 
 	// document.querySelector("body").addEventListener("click", function() {

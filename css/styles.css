@@ -802,3 +802,51 @@ span.name-placeholder:hover {
 		padding-top: 10px;
 	}
 }
+
+.show-object {
+  opacity: 0.0;
+  animation: key;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes key {
+  0% {transform: translate(5px, 10px);
+      opacity: 0.0;}
+  100% {transform: translate(0, 0);
+      opacity: 1.0;}
+}
+
+.display-none {
+	display: none;
+}
+
+
+.text-style {
+	margin: auto;
+}
+
+.text-style a {
+	font-size: 30px;
+	color: #b5b5b5;
+}
+
+.text-style span {
+	font-size: 30px;
+	color: #b5b5b5;
+}
+
+.text-style a:hover {
+	font-size: 30px;
+	color: #696767;
+}
+
+.text-style a:focus, #all.active-element {
+	font-size: 30px;
+	color: #696767;
+	text-decoration: none;
+}
+
+.select-account {
+	min-width: 100%;
+}
