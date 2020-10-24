@@ -1,0 +1,194 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Celebtrity Stories Archive</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+  <body>
+    <header>
+      <div class="header hidden" id="toggle-nav">
+      </div>
+      <div id="header-background" class="header">
+        <div class="header-background">
+          </div>
+          <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+               <div class="navbar-brand">
+                <h1>Celebtrity Stories Archive</h1>
+                <p>We stalk their lives!</p>
+                <div id="search-bar" class="search-bar hidden-xs">
+                  <button type="button" id="search-bar-text">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search search-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg> Search</button>
+                  <form><input type="text" id="search-query" class="search-field hidden"></form>
+                </div>
+               </div>
+            </div>
+          </div>
+        <div class="container">
+        <div class="nav-container" id="nav-container">
+          <div class="navbar-header">
+          <button id="nav-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+          <div id="collapsable-nav" class="collapse navbar-collapse text-center">
+             <ul id="nav-list" class="nav-item nav navbar-nav navbar-left">
+              <li>
+                <a href="#" class="nav-first"><span>Home</span><br><div class="nav-active hidden-xs"></div></a>
+              </li>
+              <li>
+                <a href="#"><span>Browse</span><br><div class="nav-active hidden-xs"></div></a>
+              </li>
+              <li>
+                <a href="#"><span>Contribute</span><br><div class="nav-active hidden-xs"></div></a>
+              </li>
+              <li>
+                <a href="#"><span>About</span><br><div class="nav-active hidden-xs"></div></a>
+              </li>
+              <li>
+                <a href="#"><span>Contact Us</span><br><div class="nav-active hidden-xs"></div></a>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div>
+      </div>
+      </nav>
+      <div id="search-bar-mobile" class="search-bar visible-xs">
+            <button type="button" id="search-bar-text-mobile">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search search-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+              </svg> Search</button>
+              <form><input type="text" id="search-query-mobile" class="search-field hidden"></form>
+     </div>
+    </header>
+    
+    <section class="container section-body">
+      <div class="container">
+        <div class="row" id="contribute-row">
+          <div class="col pull-left">
+            <div class="contribute-icon">
+              <a href="#">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                </svg>
+                <span>Contribute</span>
+              </a>
+            </div>
+          </div>
+          <div class="col pull-right">
+            <div class="contribute-icon preview-icon">
+              <a href="#">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-ul" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-collection" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"/>
+                </svg>
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container" style="padding: 0; clear: both;">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center section-title">Ariana Grande</h1>
+          </div>
+       </div>
+      </div>
+  </section>
+  <section id="content-body" style="clear: both;">
+    <div class="container">
+      <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 split-col left-col pull-left">
+            <div class="content-inside" id="content-left">
+              <img src="images/ariana-dp.jpg" alt="profile picture" class="profile-picture">
+              <!-- <div id="profile-picture" class="profile-picture">
+              </div> -->
+              <article class="text-left nunito">
+                <span id="follower-count">
+                  <span class="bold">117M</span> Followers
+                </span>
+                <div class="sep-text"></div>
+                <span id="bio" class="bio">
+                  <p>dangerous woman<br>getariemoji.com</p>
+                </span>
+                <div class="sep-text"></div>
+                <span id="stories">
+                  Latest Stories
+                </span>
+                  <div class="row">
+                    <div class="stories">
+                      <a href="#">
+                      <div class="col-md-6 story story-instagram pull-left">
+                          <div class="logo" id="logo-snap">
+                              <img src="images/ig.png">
+                          </div>
+                        </div>
+                      </a> 
+                      <a href="#">
+                        <div class="col-md-6 story story-snapchat pull-right">
+                          <div class="logo" id="logo-snap">
+                            <img src="images/snap.png">
+                        </div>
+                     </a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 split-col right-col pull-right">
+            <div class="content-inside" id="content-right">
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-col-1">
+            <span>Celebrity Stories Archives<br></span>
+            <div>
+              <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Ownership</a></li>
+                <li><a href="#">Site map</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footer-col-2">
+            <span>&copy; CelebrityStoriesArchive&trade;</span>
+            <p>Snapchat and Instagram logos are copyrighted material &copy;Snapchat&trade; &copy;Instagram&trade;</p>
+            <p>All material listed on this website are curtsey of their respective owners</p>
+            <p>Copying, sharing, or modifying parts or this website as whole is only allowed upon a written permit issued</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
