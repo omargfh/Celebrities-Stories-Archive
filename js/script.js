@@ -88,7 +88,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	document.getElementById("snap-button").addEventListener("click", function() {
 		underButton.classList.add("c-b-animate");
 		underButton.classList.remove("c-b-animate-reverse");
-	})
+	});
+
+	var ig_button = document.getElementById("ig-button");
+	var snap_button = document.getElementById("snap-button");
+
+	document.getElementById("ig-button").addEventListener("click", function(self) {
+		var stories_elements = document.getElementsByClassName("story-side");
+		var logo_side = document.getElementsByClassName("logo-side");
+		for (var i = 0; i < stories_elements.length; i++) {
+			stories_elements[i].classList.replace("story-snapchat", "story-instagram");
+			logo_side[i].innerHTML = '<img src="images/ig.png">';
+		}
+	});
+
+	document.getElementById("snap-button").addEventListener("click", function(self) {
+		var stories_elements = document.getElementsByClassName("story-side");
+		var logo_side = document.getElementsByClassName("logo-side");
+		for (var i = 0; i < stories_elements.length; i++) {
+			stories_elements[i].classList.replace("story-instagram", "story-snapchat");
+			logo_side[i].innerHTML = '<img src="images/snap.png">';
+		}
+	});
+
 
 	// document.querySelector("body").addEventListener("click", function() {
 	// 	searchBarText.classList.remove("hidden");
