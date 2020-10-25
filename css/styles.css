@@ -19,6 +19,13 @@ body {
 	position: relative;
 }
 
+@media (max-width: 767px) {
+	#nav-container {
+		position: absolute; left: 0;
+		padding: 0px 20px;
+	}
+}
+
 /* Attributes */
 
 .hidden {
