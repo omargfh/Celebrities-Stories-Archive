@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
+window.onload=function(){
 
 	document.getElementById("nav-button").addEventListener("click", function() {
 	var element = document.getElementById("header-background");
@@ -118,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// document.querySelector("body").addEventListener("click", function() {
 	// 	searchBarText.classList.remove("hidden");
 	// });
-
+}
 
 })
 

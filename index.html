@@ -39,7 +39,7 @@
             </div>
           </div>
         <div class="container">
-        <div class="nav-container" id="nav-container">
+        <div class="nav-container" id="nav-container" style="position: absolute; left: 0;">
           <div class="navbar-header">
           <button id="nav-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
@@ -54,7 +54,7 @@
                 <a href="#" class="nav-first"><span>Home</span><br><div class="nav-active hidden-xs"></div></a>
               </li>
               <li>
-                <a href="#" class="active"><span>Browse</span><br><div class="nav-active hidden-xs"></div></a>
+                <a href="index.html" class="active"><span>Browse</span><br><div class="nav-active hidden-xs"></div></a>
               </li>
               <li>
                 <a href="#"><span>Contribute</span><br><div class="nav-active hidden-xs"></div></a>
@@ -80,124 +80,8 @@
      </div>
     </header>
     
-    <div class="select-account">
-      <div class="container" style="padding: 0; clear: both;">
-        <div class="row" style="margin-right: 0px;">
-          <div class="col">
-            <h1 class="text-center section-title">select your celebrity</h1>
-          </div>
-       </div>
-       <div class="container" style="padding: 0; clear: both;">
-        <div class="row text-style"><div class="col-md-12">
-          <a href="javascript:;" id="all" class="active-element">All</a><span> | </span><a href="javacript:;" id="singer">Singer</a><span> | </span><a href="javacript:;" id="actor">Actor</a><span> | </span><a href="javacript:;" id="rapper">Rapper</a></div>
-        </div>
-       </div>
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12 items rapper singer">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="images/ariana-dp.jpg" class="profile-picture">
-                <span class="name-placeholder">Ariana Grande</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items singer">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">Katy Perry</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items singer">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="images/charlie_dp.jpg" class="profile-picture">
-                <span class="name-placeholder">Charlie Puth</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items singer">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">Ali Gatie</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items singer rapper">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">Cardie B</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items actor">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">Robert Dawny Jr.</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items actor">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">Ramy Malik</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12 items rapper">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">Eminem</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12 items rapper singer">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">NF</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-          <!-- BEGIN BLOCK -->
-          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12 items rapper actor">
-            <div class="browse-tile">
-              <a href="account.html">
-                <img src="https://via.placeholder.com/200" class="profile-picture">
-                <span class="name-placeholder">MGK</span>
-              </a>
-            </div>
-          </div>
-          <!-- END BLOCK -->
-        </div>
-      </div>
-    </div>
-
+    <section id="main-content">
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -228,7 +112,6 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ajax-utils.js"></script>
-    <script src="js/script_browse.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+    <script src="js/ajax-content.js"></script>
+ </body>
   </html>
